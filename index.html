@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilson Cardoso - RU 4150429</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo com navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de boas-vindas -->
+        <section id="home">
+            <h1>Bem-vindo ao meu site!</h1>
+            <p>Este é um site desenvolvido para a minha atividade prática da Disciplina de Desenvolvimento Web com o tema "Portifólio Pessoal (CV Online)".</p>
+        </section>
+        <!-- Seção sobre mim -->
+        <section id="sobre">
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Wilson Cardoso, sou apaixonado por jogos de PC e e-sports, sempre buscando novos desafios e estratégias para melhorar minhas habilidades. Quando não estou no computador, gosto de explorar trilhas e admirar a natureza. Tenho um interesse especial por carros e adoro aprender sobre novas tecnologias automotivas e participar de eventos relacionados ao automobilismo.</p>
+
+            <p>Estudante da área de TI, desde 2013, fazendo faculdade, cursos e estudando sozinho através de leituras e vídeos da internet. Totalmente aberto a novas experiências e disposto a acrescentar o que for preciso ao meu conhecimento para executar as atividades propostas.</p>
+            
+            <p>Organizando, autodidata, aprendo rápido. Buscando atividades claras e diretas, com foco e determinação para o melhor resultado possível.</p>
+                
+            <p>3 Anos de experiência com sistemas ERP na parte de suporte ao cliente, fazendo atendimento remoto e presencial.</p>
+                
+            <p>Trabalhei mais com a parte de Hardware, mas adquirindo gosto maior por programação, onde estou aprofundando meus conhecimentos atualmente.</p> 
+                
+            <p>Conhecimentos básicos de Python, VBA, HTML, PHP, SQL, C#, C++, JAVA, Firebird.</p>
+        </section>
+        <!-- Seção sobre formação -->
+        <section id="formacao">
+            <h1>Formação</h1>
+            <ul>
+                <li>Curso superior de Analise e Desenvolvimento de Sistemas - Uninter (EAD) (Jun 2022 – cursando)</li><br>
+                <li>Curso Python - Youtube (Gustavo Guanabara) (EAD - cursando)</li><br>
+                <li>Curso técnico de Técnico em Informática - Senac RS (presencial) (2019 – 2020)</li><br>
+                <li>Curso VBA - Udemy (EAD)</li><br>
+                <li>Curso Python - Udemy (EAD)</li><br>
+                <li>Curso técnico de Técnico em Informática - I. E. Riachuelo (presencial) (2015 – 2017)</li><br><br><br><br>
+                <li>Inglês Instrumental</li>
+            </ul>
+        </section>
+        <!-- Seção sobre experiências -->
+        <section id="experiencias">
+            <h1>Experiências</h1>
+            <ul>
+                <li>Suporte Técnico - Acertsoft (2 anos 3 meses)</li><br>
+                <li>Suporte Técnico - Flexpro Sistemas (Atualmente)</li><br><br><br>
+                <li><a href="https://www.linkedin.com/in/cardoso-wilson/" target="_blank">Perfil Linkedin</a></li> 
+            </ul>
+        </section>
+        <!-- Seção de portfólio -->
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <p>Links para trabalhos de outras disciplinas</p>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1-JqguLILMoe4MiGFs-cW8JUV-ygjd2Sx/view?usp=sharing" target="_blank">Atividade Extensionista</a></li>
+                <li><a href="https://github.com/cardoso-wilson/cofrinho-de-moedas_JAVA" target="_blank">Cofrinho de moedas em Java</a></li>
+                <li><a href="https://github.com/cardoso-wilson/cadastro-de-produtos_PYTHON" target="_blank">Cadastro de produtos em Python</a></li>
+                <li><a href="https://github.com/cardoso-wilson/pizzaria_PYTHON" target="_blank">Pizzaria em Python</a></li>
+                <li><a href="https://github.com/cardoso-wilson/loja_PYTHON" target="_blank">Loja em Python</a></li>
+                <li><a href="https://github.com/cardoso-wilson/restaurante_PYTHON" target="_blank">Restaurante em Python</a></li>
+            </ul>
+        </section>
+        <!-- Seção de contato -->
+        <section id="contato">
+            <h1>Contato</h1>
+            <!-- Formulário de contato com ID para JavaScript -->
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Wilson Cardoso - RU 4150429</p>
+    </footer>
+    <!-- Script JavaScript para manipulação do formulário -->
+    <script>
+        // Adiciona um ouvinte de evento para o formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio real do formulário
+            alert('Mensagem enviada com sucesso!'); // Exibe mensagem de confirmação
+            this.reset(); // Limpa o formulário após o envio
+        });
+    </script>
+</body>
+</html>
