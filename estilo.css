@@ -1,0 +1,105 @@
+/* Estilos básicos do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o cabeçalho fixo */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.05rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Estilos para os links de navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+/* Estilos para os links de navegação quando passados com o mouse */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 2rem;
+    padding-top: 5rem; /* Espaço adicional para compensar o header fixo */
+}
+
+/* Estilos para cada seção */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 0.05rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para o formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os rótulos do formulário */
+form label {
+    margin-top: 10px;
+}
+
+/* Estilos para os campos de entrada do formulário */
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para o botão do formulário */
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0f9b16;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Estilos para o botão do formulário quando passados com o mouse */
+form button:hover {
+    background-color: #555;
+}
